@@ -1,0 +1,13 @@
+.form-restaurante {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.form-restaurante h2 {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 40px;
+}

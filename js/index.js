@@ -25,9 +25,7 @@ function login() {
         },
         body: body
     }).then(res => res.json())
-      .then(res => {
-        console.log(res);        
-        console.log(res.access_token);        
+      .then(res => {      
         localStorage.setItem("access_token", res.access_token);
         window.location.href = "/dashboard.html"
         alert("123");
