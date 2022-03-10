@@ -1,7 +1,6 @@
 function login() {
 
-    console.log("chamei a função login...");
-
+  debugger;
     const email = document.querySelector("#email").value;
     const pswd = document.querySelector("#password").value; // 123
     const cryptoPswd = sha1(pswd);

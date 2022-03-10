@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/register.js"></script>
   <title>Cadastro</title>
 </head>
 
@@ -17,8 +18,8 @@
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
-          <li><a href="restaurantes.html">Restaurantes</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="restaurants.html">Restaurantes</a></li>
+          <li><a href="register.html">Cadastro</a></li>
         </ul>
       </nav>
     </div>
@@ -26,13 +27,13 @@
 
 
   <div class="container-form">
-    <form action="" class="form-restaurante">
+    <form action="" class="form-restaurant" onsubmit="register(event);">
       <h2>Cadastro de Restaurante</h2>
       <label>Nome do restaurante</label>
       <input id="name" name="name" type="text" class="box">
       <label>Taxa de frete</label>
       <input id="freightRate" name="freightRate" type="number" class="box">
-      <input id="submit" type="submit" value="Cadastrar" onclick="login();">
+      <input id="submit" type="submit" value="Cadastrar">
     </form>
   </div>
 
