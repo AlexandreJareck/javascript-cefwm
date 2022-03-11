@@ -8,7 +8,7 @@ window.onload = function () {
   }
 
   var data = [];
-debugger;
+  debugger;
   fetch("http://localhost:8080/restaurantes", {
     method: "GET",
     headers: {
@@ -19,11 +19,13 @@ debugger;
   })
     .then(res => res.json())
     .then(res => {
-      data = res;
+
+      if (res)
+        data = res;
 
       var root = document.getElementById('root');
       data.forEach(element => root.insertAdjacentHTML('beforebegin',
-        `<tr><td>${element.nome}</td><td>${element.taxaFrete}</td></tr>`));
+        `<tr><td>${element?.nome}</td><td>${element?.taxaFrete}</td></tr>`));
 
     });
 }
